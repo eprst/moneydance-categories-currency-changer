@@ -1,0 +1,9 @@
+{
+  "vendor" = "konstantin.sobolev@gmail.com"
+  "module_build" = "1"
+  "minbuild" = "1000"
+  "vendor.url" = "https://github.com/eprst"
+  "module_name" = "Category Currency Changer"
+  "module_desc" = "<html><body><title>Category Currency Changer</title><p>Changes categories currency. Use at your own risk!</p></body></html>"
+  "desc" = "An extension to change categories currency. Use at your own risk!"
+}
