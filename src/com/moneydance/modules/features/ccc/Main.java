@@ -13,7 +13,7 @@ import java.awt.*;
 
 public class Main
         extends FeatureModule {
-    private AccountListWindow accountListWindow = null;
+    private CCCWindow cccWindow = null;
 
     public void init() {
         // the first thing we will do is register this module to be invoked
@@ -75,13 +75,13 @@ public class Main
     }
 
     private synchronized void showConsole() {
-        if (accountListWindow == null) {
-            accountListWindow = new AccountListWindow(this);
-            accountListWindow.setVisible(true);
+        if (cccWindow == null) {
+            cccWindow = new CCCWindow(this);
+            cccWindow.setVisible(true);
         } else {
-            accountListWindow.setVisible(true);
-            accountListWindow.toFront();
-            accountListWindow.requestFocus();
+            cccWindow.setVisible(true);
+            cccWindow.toFront();
+            cccWindow.requestFocus();
         }
     }
 
@@ -90,9 +90,9 @@ public class Main
     }
 
     synchronized void closeConsole() {
-        if (accountListWindow != null) {
-            accountListWindow.goAway();
-            accountListWindow = null;
+        if (cccWindow != null) {
+            cccWindow.goAway();
+            cccWindow = null;
             System.gc();
         }
     }
